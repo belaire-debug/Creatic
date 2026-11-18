@@ -80,12 +80,7 @@ hero = Heros()
 
 
 def game():
-    print("Tu es un chevalier en quête pour combattre des monstres. Tu as 20 PV.")
-    print("A chaque tour tu peux soit combattre(c) ou éviter(e).")
-    print("Si tu choisis de combattre tu peux soit perdre ou gagner des PV selon si tu perd ou gagne.")
-    print("Si tu choisis d'éviter tu perd seulement 2 PV.")
-    print("Ton but est de survivre pour 10 tours.")
-    print("Pour revoir ce message tu peux toujours taper (r).")
+    afficher_regles()
 
     while hero.est_vivant() and hero.tour < 10:
         choix = input("Combattre (c), éviter (e) ou règles (r)? ")
